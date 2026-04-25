@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>こころあみ | 日々の暮らしに、小さな愛とときめきを</title>
-  <meta name="description" content="かぎ針編みの編みモチーフ・ヘアアクセサリーのハンドメイドショップ。ハート・お花・どうぶつなど、ナチュラルで大人可愛いアイテムをお届けします。">
+  <title>こころあみ | 子どもの毎日に、小さな"かわいい"を</title>
+  <meta name="description" content="3歳の女の子のママが編む、かぎ針編みのハンドメイドアイテム。ヘアアクセサリー・編みモチーフをメルカリ・minneで販売中。">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta property="og:title" content="こころあみ | 日々の暮らしに、小さな愛とときめきを">
-  <meta property="og:description" content="かぎ針編みのハンドメイドショップ。編みモチーフ・ヘアアクセサリーをメルカリ・minneで販売中。">
+  <meta property="og:title" content="こころあみ | 子どもの毎日に、小さな"かわいい"を">
+  <meta property="og:description" content="かぎ針編みのハンドメイドショップ。メルカリ・minneで販売中。">
   <meta property="og:type" content="website">
 </head>
 <body>
 
   <!-- ========== HEADER ========== -->
-  <header class="site-header">
+  <header class="site-header site-header--hero" id="site-header">
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="site-logo">
@@ -45,260 +45,282 @@
 
   <main>
 
-    <!-- ========== HERO ========== -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container">
-        <div class="hero-inner">
+    <!-- ① FIRST VIEW ======================================= -->
+    <section class="fv">
+      <div class="fv__bg">
+        <img class="fv__bg-img"
+          src="https://image.minne.com/minne/mobile_app_product/480x480cq85/abe0cb1739501a4a43c2a972c5ce974937daf04a.jpeg"
+          alt="" aria-hidden="true"
+          onerror="this.style.opacity=0">
+      </div>
+      <div class="fv__overlay"></div>
+      <div class="fv__content">
+        <p class="fv__eyebrow">Handmade Crochet with Love</p>
+        <h1 class="fv__title">子どもの毎日に、<br>小さな<em>"かわいい"</em>を。</h1>
+        <p class="fv__desc">ひと目ひと目、心を込めて編んだ<br>かぎ針編みのハンドメイドアイテム</p>
+        <div class="fv__btns">
+          <a href="https://jp.mercari.com/user/profile/524631286"
+             target="_blank" rel="noopener"
+             class="fv-btn fv-btn--mercari">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            メルカリで見る
+          </a>
+          <a href="https://minne.com/@08024486901"
+             target="_blank" rel="noopener"
+             class="fv-btn fv-btn--minne">
+            minneで見る
+          </a>
+        </div>
+        <a href="#story" class="fv__scroll-hint" aria-label="下へスクロール">
+          <span>scroll</span>
+          <svg width="14" height="22" viewBox="0 0 14 22" fill="none">
+            <line x1="7" y1="0" x2="7" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M1 12l6 7 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
 
-          <!-- Text -->
-          <div class="hero-text">
-            <div class="hero-badge">Handmade Crochet with Love</div>
-            <h1 class="hero-title">
-              小さな愛と、<br>ときめきを。
-              <em>kokoro-ami</em>
-            </h1>
-            <p class="hero-desc">
-              ひと目ひと目、心を込めて編んだ<br>
-              かぎ針編みのハンドメイドアイテム。<br>
-              ナチュラルで大人可愛い雰囲気を<br>
-              日々の暮らしに添えてください。
-            </p>
-            <div class="hero-actions">
-              <a href="products.html" class="btn btn--primary">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                商品をみる
-              </a>
-              <a href="about.html" class="btn btn--outline">作り手について</a>
+    <!-- ② STORY ============================================ -->
+    <section class="story-section" id="story">
+      <div class="container container--narrow">
+        <div class="story-inner fade-in">
+          <span class="story-label">Our Story</span>
+          <h2 class="story-title">娘のために編んだ<br>モチーフが、始まりでした。</h2>
+          <p class="story-body">
+            3歳の女の子を育てながら、ひと目ひと目 心を込めて編んでいます。<br>
+            SNSに投稿したところ「どこで買えますか？」という声をいただき、<br>
+            「かわいい」と笑顔になる瞬間を届けたくて販売をスタートしました。
+          </p>
+          <div class="story-sig">
+            <div class="story-sig__avatar"></div>
+            <div>
+              <p class="story-sig__name">こころあみ 作り手</p>
+              <p class="story-sig__role">3歳の女の子のママ / 毎日編んでいます</p>
             </div>
           </div>
-
-          <!-- Visual -->
-          <div class="hero-visual">
-            <div class="hero-card">
-              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/8b7760011ed27a3f1c31b550831278143e4acdd9.jpeg"
-                   alt="くま・うさぎモチーフ 4個セット" loading="lazy">
-            </div>
-            <div class="hero-card">
-              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/8d0871b282944b3da3c19ce23508d1c6f6ec4650.jpeg"
-                   alt="小花モチーフ くすみピンク" loading="lazy">
-            </div>
-            <div class="hero-card">
-              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/97c73c054693f925b05634281f126f0fa95602ac.jpeg"
-                   alt="ハートモチーフ巾着ポーチ" loading="lazy">
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ========== CATEGORY ========== -->
-    <section class="section" id="categories">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-header__label">Category</span>
-          <h2 class="section-header__title">商品カテゴリ</h2>
-          <p class="section-header__desc">ひと目ひと目丁寧に編んだ、<br>大人可愛いかぎ針編みアイテムです。</p>
+    <!-- ③ SCENES ============================================ -->
+    <section class="scenes" aria-label="使用シーン">
+
+      <!-- Scene 1 -->
+      <div class="scene fade-in">
+        <div class="scene__visual scene__visual--1">
+          <img
+            src="https://image.minne.com/minne/mobile_app_product/480x480cq85/cc2a176c7b3c25e986ad065810cd9d0582f1ad86.jpeg"
+            alt="保育園バッグのワンポイントに使う作品"
+            onerror="this.style.opacity=0">
         </div>
-
-        <div class="category-grid">
-
-          <a href="products.html?cat=flower" class="category-card fade-in">
-            <img class="category-card__img" src="https://image.minne.com/minne/mobile_app_product/480x480cq85/8d0871b282944b3da3c19ce23508d1c6f6ec4650.jpeg" alt="お花・いちごモチーフ" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-            <div class="category-card__overlay"></div>
-            <div class="category-card__body">
-              <p class="category-card__en">Crochet Motifs</p>
-              <h3 class="category-card__name">編みモチーフ</h3>
-              <span class="category-card__link">商品をみる</span>
-            </div>
-          </a>
-
-          <a href="products.html?cat=animal" class="category-card fade-in">
-            <img class="category-card__img" src="https://image.minne.com/minne/mobile_app_product/480x480cq85/8b7760011ed27a3f1c31b550831278143e4acdd9.jpeg" alt="どうぶつモチーフ" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-            <div class="category-card__overlay"></div>
-            <div class="category-card__body">
-              <p class="category-card__en">Animal Motifs</p>
-              <h3 class="category-card__name">どうぶつモチーフ</h3>
-              <span class="category-card__link">商品をみる</span>
-            </div>
-          </a>
-
-          <a href="products.html?cat=pouch" class="category-card fade-in">
-            <img class="category-card__img" src="https://image.minne.com/minne/mobile_app_product/480x480cq85/97c73c054693f925b05634281f126f0fa95602ac.jpeg" alt="ポーチ・小物" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-            <div class="category-card__overlay"></div>
-            <div class="category-card__body">
-              <p class="category-card__en">Pouches &amp; More</p>
-              <h3 class="category-card__name">ポーチ・小物</h3>
-              <span class="category-card__link">商品をみる</span>
-            </div>
-          </a>
-
+        <div class="scene__text">
+          <span class="scene__num">01</span>
+          <h2 class="scene__title">保育園のバッグに、<br>ちょこんと。</h2>
+          <p class="scene__desc">入園グッズのワンポイントに。<br>世界にひとつの、愛着ある持ちもの。</p>
         </div>
       </div>
+
+      <!-- Scene 2 -->
+      <div class="scene scene--flip fade-in">
+        <div class="scene__visual scene__visual--2">
+          <img
+            src="https://image.minne.com/minne/mobile_app_product/480x480cq85/b83835acaa676615a3395aed237b5b21716f81ef.jpeg"
+            alt="ヘアアクセサリーとして使う編みモチーフ"
+            onerror="this.style.opacity=0">
+        </div>
+        <div class="scene__text">
+          <span class="scene__num">02</span>
+          <h2 class="scene__title">毎朝のヘアアクセに、<br>とびきりの一本を。</h2>
+          <p class="scene__desc">やさしい素材で子どもの頭にも安心。<br>お気に入りのモチーフをえらんで。</p>
+        </div>
+      </div>
+
+      <!-- Scene 3 -->
+      <div class="scene fade-in">
+        <div class="scene__visual scene__visual--3">
+          <img
+            src="https://image.minne.com/minne/mobile_app_product/480x480cq85/97c73c054693f925b05634281f126f0fa95602ac.jpeg"
+            alt="出産祝い・誕生日プレゼントとして"
+            onerror="this.style.opacity=0">
+        </div>
+        <div class="scene__text">
+          <span class="scene__num">03</span>
+          <h2 class="scene__title">出産祝い・誕生日の<br>贈り物に。</h2>
+          <p class="scene__desc">ていねいなラッピングでお届け。<br>受け取った方が笑顔になるギフトを。</p>
+        </div>
+      </div>
+
     </section>
 
-    <!-- ========== POPULAR PRODUCTS ========== -->
-    <section class="section section--alt" id="popular">
+    <!-- ④ POPULAR PRODUCTS ================================= -->
+    <section class="pop-section">
       <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-header__label">Popular Items</span>
-          <h2 class="section-header__title">人気商品</h2>
-          <p class="section-header__desc">多くのお客様に選ばれているアイテムをご紹介します。</p>
+        <div class="pop-header fade-in">
+          <span class="pop-label">Popular Items</span>
+          <h2 class="pop-title">人気アイテム</h2>
         </div>
 
-        <div class="product-grid">
+        <div class="pop-grid">
 
-          <!-- Product 1 -->
-          <div class="product-card fade-in" data-category="motif">
-            <div class="product-card__img-wrap">
+          <div class="pop-card fade-in">
+            <div class="pop-card__img" style="background:linear-gradient(135deg,#f0e0cc 0%,#d4b09a 100%);">
               <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/8b7760011ed27a3f1c31b550831278143e4acdd9.jpeg"
-                   alt="くま・うさぎモチーフ 4個セット" loading="lazy">
-              <span class="product-card__badge product-card__badge--popular">人気No.1</span>
+                alt="くま・うさぎモチーフ 4個セット" loading="lazy"
+                onerror="this.style.opacity=0">
+              <span class="pop-badge pop-badge--hot">人気No.1</span>
             </div>
-            <div class="product-card__body">
-              <p class="product-card__category">Animal Motifs</p>
-              <h3 class="product-card__name">くま・うさぎモチーフ 4個セット</h3>
-              <p class="product-card__price">¥666 <span>税込</span></p>
-              <div class="product-card__actions">
-                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
-                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+            <div class="pop-card__body">
+              <h3 class="pop-card__name">くま・うさぎモチーフ<br>4個セット</h3>
+              <p class="pop-card__price">¥666</p>
+              <div class="pop-card__btns">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--m">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--n">minne</a>
               </div>
             </div>
           </div>
 
-          <!-- Product 2 -->
-          <div class="product-card fade-in" data-category="motif">
-            <div class="product-card__img-wrap">
+          <div class="pop-card fade-in">
+            <div class="pop-card__img" style="background:linear-gradient(135deg,#fde0e0 0%,#f0a0a8 100%);">
               <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/3b2feb68a5bfdeeb9cb91e5f90c5ac703e5b3133.jpeg"
-                   alt="いちごモチーフ 5個セット" loading="lazy">
-              <span class="product-card__badge product-card__badge--popular">人気</span>
+                alt="いちごモチーフ 5個セット" loading="lazy"
+                onerror="this.style.opacity=0">
+              <span class="pop-badge pop-badge--popular">人気</span>
             </div>
-            <div class="product-card__body">
-              <p class="product-card__category">Crochet Motifs</p>
-              <h3 class="product-card__name">いちごモチーフ 5個セット</h3>
-              <p class="product-card__price">¥555 <span>税込</span></p>
-              <div class="product-card__actions">
-                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
-                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+            <div class="pop-card__body">
+              <h3 class="pop-card__name">いちごモチーフ<br>5個セット</h3>
+              <p class="pop-card__price">¥555</p>
+              <div class="pop-card__btns">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--m">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--n">minne</a>
               </div>
             </div>
           </div>
 
-          <!-- Product 3 -->
-          <div class="product-card fade-in" data-category="animal">
-            <div class="product-card__img-wrap">
-              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/6850656c6dcd702f2850e54897a5be87d08dbdc2.jpeg"
-                   alt="くま・うさぎモチーフ ナチュラル" loading="lazy">
-              <span class="product-card__badge product-card__badge--new">New</span>
+          <div class="pop-card fade-in">
+            <div class="pop-card__img" style="background:linear-gradient(135deg,#fce8d0 0%,#f0c090 100%);">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/abe0cb1739501a4a43c2a972c5ce974937daf04a.jpeg"
+                alt="小花モチーフ 10個セット" loading="lazy"
+                onerror="this.style.opacity=0">
+              <span class="pop-badge pop-badge--new">New</span>
             </div>
-            <div class="product-card__body">
-              <p class="product-card__category">Animal Motifs</p>
-              <h3 class="product-card__name">くま・うさぎモチーフ（ナチュラル）</h3>
-              <p class="product-card__price">¥550 <span>税込</span></p>
-              <div class="product-card__actions">
-                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
-                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+            <div class="pop-card__body">
+              <h3 class="pop-card__name">小花モチーフ<br>10個セット</h3>
+              <p class="pop-card__price">¥888</p>
+              <div class="pop-card__btns">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--m">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--n">minne</a>
               </div>
             </div>
           </div>
 
-          <!-- Product 4 -->
-          <div class="product-card fade-in" data-category="pouch">
-            <div class="product-card__img-wrap">
+          <div class="pop-card fade-in">
+            <div class="pop-card__img" style="background:linear-gradient(135deg,#f5d0d8 0%,#d4809a 100%);">
               <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/97c73c054693f925b05634281f126f0fa95602ac.jpeg"
-                   alt="ハートモチーフ巾着ポーチ" loading="lazy">
-              <span class="product-card__badge product-card__badge--popular">おすすめ</span>
+                alt="ハートモチーフ巾着ポーチ" loading="lazy"
+                onerror="this.style.opacity=0">
+              <span class="pop-badge pop-badge--rec">おすすめ</span>
             </div>
-            <div class="product-card__body">
-              <p class="product-card__category">Pouches &amp; More</p>
-              <h3 class="product-card__name">ハートモチーフ巾着ポーチ</h3>
-              <p class="product-card__price">¥680 <span>税込</span></p>
-              <div class="product-card__actions">
-                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
-                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+            <div class="pop-card__body">
+              <h3 class="pop-card__name">ハートモチーフ<br>巾着ポーチ</h3>
+              <p class="pop-card__price">¥680</p>
+              <div class="pop-card__btns">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--m">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="pop-card__btn pop-card__btn--n">minne</a>
               </div>
             </div>
           </div>
 
         </div>
 
-        <div class="text-center mt-40">
+        <div class="text-center" style="margin-top:48px;">
           <a href="products.html" class="btn btn--outline">すべての商品をみる →</a>
         </div>
       </div>
     </section>
 
-    <!-- ========== SHOP LINKS ========== -->
-    <section class="shop-links">
-      <div class="container">
-        <div class="shop-links-inner fade-in">
-          <p class="shop-links__label">Online Shop</p>
-          <h2 class="shop-links__title">こころあみの商品は<br>メルカリ・minneで販売中</h2>
-          <p class="shop-links__desc">
-            安心・安全なプラットフォームでご購入いただけます。<br>
-            ご不明な点はコメントやメッセージでお気軽にどうぞ。
-          </p>
-          <div class="shop-links__btns">
-            <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--mercari">
-              メルカリでみる
-            </a>
-            <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--minne">
-              minneでみる
-            </a>
+    <!-- ⑤ PURCHASE GUIDE =================================== -->
+    <section class="buy-section">
+      <div class="container container--narrow">
+        <div class="buy-header fade-in">
+          <span class="buy-label">How to Buy</span>
+          <h2 class="buy-title">どちらで買うか<br>迷ったら</h2>
+          <p class="buy-note">どちらも同じ商品・同じ価格です。<br>お使いのアプリでお選びください。</p>
+        </div>
+        <div class="buy-cards fade-in">
+          <div class="buy-card">
+            <div class="buy-card__icon buy-card__icon--m">M</div>
+            <h3 class="buy-card__name">メルカリ</h3>
+            <p class="buy-card__desc">アプリで簡単購入。<br>はじめての方にもおすすめ。<br>クレカ・コンビニ払い対応。</p>
+            <a href="https://jp.mercari.com/user/profile/524631286"
+               target="_blank" rel="noopener"
+               class="buy-card__btn buy-card__btn--m">メルカリでショップを見る</a>
+          </div>
+          <div class="buy-card">
+            <div class="buy-card__icon buy-card__icon--n">mi</div>
+            <h3 class="buy-card__name">minne</h3>
+            <p class="buy-card__desc">ハンドメイド専門サイト。<br>作品の詳細を確認しやすい。<br>クレカ・銀行振込対応。</p>
+            <a href="https://minne.com/@08024486901"
+               target="_blank" rel="noopener"
+               class="buy-card__btn buy-card__btn--n">minneでショップを見る</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== ABOUT TEASER ========== -->
-    <section class="section">
+    <!-- ⑥ TRUST ============================================ -->
+    <section class="trust-section">
       <div class="container">
-        <div class="about-teaser">
-
-          <div class="about-teaser__img-wrap">
-            <div class="about-teaser__img">
-              <div class="ph ph-about" style="height:100%;"></div>
-            </div>
-            <div class="about-teaser__deco"></div>
-            <div class="about-teaser__deco2"></div>
+        <div class="trust-stats fade-in">
+          <div class="trust-stat">
+            <p class="trust-num">100<span>+</span></p>
+            <p class="trust-label">販売実績</p>
           </div>
-
-          <div class="fade-in">
-            <p class="about-teaser__label">About こころあみ</p>
-            <h2 class="about-teaser__title">日々の暮らしに、<br>小さな愛とときめきを</h2>
-            <p class="about-teaser__body">
-              3歳の女の子のママが、ひと目ひと目心を込めて編んでいます。
-              「日常のなかに、小さな幸せをそっと添えたい」という想いから
-              生まれたハンドメイドブランドです。
-            </p>
-            <p class="about-teaser__body">
-              ナチュラルで上品な雰囲気を大切に、
-              お子様はもちろん大人の方にも喜んでいただける
-              アイテムを作り続けています。
-            </p>
-            <div class="about-teaser__values">
-              <div class="value-pill">
-                <span class="value-pill__icon">🧶</span>
-                <span>丁寧な手編み</span>
-              </div>
-              <div class="value-pill">
-                <span class="value-pill__icon">🌸</span>
-                <span>大人可愛い</span>
-              </div>
-              <div class="value-pill">
-                <span class="value-pill__icon">🎁</span>
-                <span>ギフトにも</span>
-              </div>
-            </div>
-            <a href="about.html" class="btn btn--outline">もっとよむ →</a>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-stat">
+            <p class="trust-num">200<span>+</span></p>
+            <p class="trust-label">お気に入り登録</p>
           </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-stat">
+            <p class="trust-num">多数</p>
+            <p class="trust-label">リピーターのお客様</p>
+          </div>
+        </div>
+        <p class="trust-quote fade-in">「こんなの探してた！」「プレゼントに喜ばれました」<br>お客様のメッセージが、何より励みになっています。</p>
+      </div>
+    </section>
 
+    <!-- ⑦ ABOUT ============================================ -->
+    <section class="about-section section">
+      <div class="container">
+        <div class="about-grid fade-in">
+          <div class="about-img">
+            <div class="about-img__inner"></div>
+          </div>
+          <div class="about-text">
+            <span class="story-label">About</span>
+            <h2 class="about-title">こころあみについて</h2>
+            <p class="about-body">
+              3歳の女の子を育てながら、毎日かぎ針を手に編んでいます。
+              娘のヘアアクセに添えた小さなモチーフに「どこで買えますか？」と声をかけていただいたことが始まりでした。
+            </p>
+            <p class="about-body">
+              使用する糸はすべて赤ちゃんにも安心のコットン・アクリル素材。
+              金属部品は一切使用せず、出荷前には一点ずつ丁寧にチェックしています。
+            </p>
+            <div class="about-pills">
+              <span class="about-pill">🧶 丁寧な手編み</span>
+              <span class="about-pill">🌿 安全な素材</span>
+              <span class="about-pill">🎁 ギフトにも</span>
+            </div>
+            <a href="about.html" class="btn btn--outline" style="margin-top:28px;display:inline-flex;">くわしく読む →</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== NEWS ========== -->
+    <!-- ⑧ NEWS ============================================= -->
     <section class="section section--alt">
       <div class="container">
         <div class="section-header fade-in">
@@ -352,7 +374,7 @@
 
         </div>
 
-        <div class="text-center mt-40">
+        <div class="text-center" style="margin-top:40px;">
           <a href="news.html" class="btn btn--outline">すべて読む →</a>
         </div>
       </div>
@@ -370,7 +392,7 @@
           <div class="footer-social">
             <a href="https://www.instagram.com/life_m.to.s?igsh=MTYyY2ttYXVoemdxYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="footer-social__link" aria-label="Instagram">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
               </svg>
             </a>
             <a href="https://note.com/0223fegi/portal" target="_blank" rel="noopener" class="footer-social__link" aria-label="note">

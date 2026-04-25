@@ -6,9 +6,9 @@
 (function () {
   const header = document.querySelector('.site-header');
   if (!header) return;
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 20);
-  }, { passive: true });
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll(); // run on load
+  window.addEventListener('scroll', onScroll, { passive: true });
 })();
 
 /* --- Hamburger menu --- */
