@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品一覧 | こころあみ Crochet Studio</title>
+  <meta name="description" content="こころあみの商品一覧。かぎ針編みのモチーフ・リボン・どうぶつ・ポーチなど全商品をご覧いただけます。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <span class="en">kokoro-ami</span>
+          <span class="site-logo__sub">crochet studio</span>
+        </a>
+        <nav class="site-nav">
+          <a href="index.html"    class="site-nav__link">Home</a>
+          <a href="products.html" class="site-nav__link">Products</a>
+          <a href="about.html"    class="site-nav__link">About</a>
+          <a href="news.html"     class="site-nav__link">News</a>
+          <a href="products.html" class="site-nav__cta">購入はこちら</a>
+        </nav>
+        <button class="hamburger" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html"    class="mobile-nav__link">Home</a>
+      <a href="products.html" class="mobile-nav__link">Products</a>
+      <a href="about.html"    class="mobile-nav__link">About</a>
+      <a href="news.html"     class="mobile-nav__link">News</a>
+      <a href="products.html" class="mobile-nav__cta">商品をみる →</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <div class="page-hero">
+      <p class="page-hero__label">Products</p>
+      <h1 class="page-hero__title">商品一覧</h1>
+      <p class="page-hero__desc">すべて手編みで丁寧に作ったアイテムです。<br>メルカリ・minneよりご購入いただけます。</p>
+    </div>
+
+    <!-- ========== SHOP NOTICE ========== -->
+    <div style="background:#fff8f5;border-bottom:1px solid #f0e4dc;padding:14px 0;">
+      <div class="container" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center;">
+        <span style="font-size:0.78rem;color:#9e948d;">🛒 購入は外部ショップへ移動します：</span>
+        <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener"
+           style="font-size:0.78rem;font-weight:500;color:#ff0211;background:rgba(255,2,17,0.06);padding:6px 16px;border-radius:100px;">
+          メルカリショップ →
+        </a>
+        <a href="https://minne.com/@08024486901" target="_blank" rel="noopener"
+           style="font-size:0.78rem;font-weight:500;color:#f68b6e;background:rgba(246,139,110,0.1);padding:6px 16px;border-radius:100px;">
+          minne →
+        </a>
+      </div>
+    </div>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter bar -->
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-filter="all">すべて</button>
+          <button class="filter-btn" data-filter="flower">お花・いちご</button>
+          <button class="filter-btn" data-filter="ribbon">リボン</button>
+          <button class="filter-btn" data-filter="animal">どうぶつ</button>
+          <button class="filter-btn" data-filter="pouch">ポーチ・小物</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <!-- ── ポーチ ── -->
+          <div class="product-card fade-in" data-category="pouch">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/97c73c054693f925b05634281f126f0fa95602ac.jpeg"
+                   alt="かぎ針編みハートモチーフ巾着ポーチ" loading="lazy">
+              <span class="product-card__badge product-card__badge--popular">人気</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Pouch</p>
+              <h3 class="product-card__name">かぎ針編みハートモチーフ巾着ポーチ</h3>
+              <p class="product-card__price">¥680 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── いちご ── -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/3b2feb68a5bfdeeb9cb91e5f90c5ac703e5b3133.jpeg"
+                   alt="ぷっくりかわいいかぎ針編みいちごモチーフ 5個セット" loading="lazy">
+              <span class="product-card__badge product-card__badge--popular">人気</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Motifs</p>
+              <h3 class="product-card__name">かぎ針編みいちごモチーフ 5個セット</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── お花（ナチュラル）── -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/cc2a176c7b3c25e986ad065810cd9d0582f1ad86.jpeg"
+                   alt="かぎ針編み小花モチーフ 5個セット ナチュラルカラー" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Motifs</p>
+              <h3 class="product-card__name">小花モチーフ 5個セット（ナチュラル）</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── お花（生成り）── -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/f30434375dd69c7af869bf06f82e122321175855.jpeg"
+                   alt="かぎ針編み小花モチーフ 5個セット 生成り" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Motifs</p>
+              <h3 class="product-card__name">小花モチーフ 5個セット（生成り）</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── お花（くすみピンク）── -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/8d0871b282944b3da3c19ce23508d1c6f6ec4650.jpeg"
+                   alt="かぎ針編み小花モチーフ 5個セット くすみピンク" loading="lazy">
+              <span class="product-card__badge product-card__badge--popular">人気</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Motifs</p>
+              <h3 class="product-card__name">小花モチーフ 5個セット（くすみピンク）</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 小花（ブルー）── -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/32978cce001013e658154257174a0d63493a8c06.jpeg"
+                   alt="かぎ針編み小花モチーフ 5個セット ブルー" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Motifs</p>
+              <h3 class="product-card__name">小花モチーフ 5個セット（ブルー）</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 小花（イエロー）── -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/3549f0761dae6ce0ffcfe82671da58f5905525c5.jpeg"
+                   alt="かぎ針編み小花モチーフ 5個セット イエロー" loading="lazy">
+              <span class="product-card__badge product-card__badge--new">New</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Motifs</p>
+              <h3 class="product-card__name">小花モチーフ 5個セット（イエロー）</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── お花 10個セット ── -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/abe0cb1739501a4a43c2a972c5ce974937daf04a.jpeg"
+                   alt="かぎ針編みお花モチーフ 10個セット 赤・緑" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Motifs Set</p>
+              <h3 class="product-card__name">お花モチーフ 10個セット（赤・緑）</h3>
+              <p class="product-card__price">¥888 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── リボン（ブラウン）── -->
+          <div class="product-card fade-in" data-category="ribbon">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/b83835acaa676615a3395aed237b5b21716f81ef.jpeg"
+                   alt="かぎ針編みミニリボンモチーフ 5個セット ブラウン" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Ribbon Motifs</p>
+              <h3 class="product-card__name">ミニリボンモチーフ 5個セット（ブラウン）</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── リボン（ベージュレース）── -->
+          <div class="product-card fade-in" data-category="ribbon">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/f4f87bc8ddf4c8d05d528da85dfa5c455a7cce2f.jpeg"
+                   alt="かぎ針編みリボンモチーフ 5個セット ベージュレース" loading="lazy">
+              <span class="product-card__badge product-card__badge--popular">人気</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Ribbon Motifs</p>
+              <h3 class="product-card__name">リボンモチーフ 5個セット（ベージュレース）</h3>
+              <p class="product-card__price">¥555 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── リボン（レッドミニ）── -->
+          <div class="product-card fade-in" data-category="ribbon">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/de746868013bb0dac34af6a8ea4a66ab222ffc91.jpeg"
+                   alt="かぎ針編みリボンモチーフ 5個セット レッドミニ" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Ribbon Motifs</p>
+              <h3 class="product-card__name">リボンモチーフ 5個セット（レッドミニ）</h3>
+              <p class="product-card__price">¥480 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── リボン（レッド）── -->
+          <div class="product-card fade-in" data-category="ribbon">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/39d3260df2d241d64e7bb2d0012b20b010deed7c.jpeg"
+                   alt="かぎ針編みリボンモチーフ 5個セット レッド" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Ribbon Motifs</p>
+              <h3 class="product-card__name">リボンモチーフ 5個セット（レッド）</h3>
+              <p class="product-card__price">¥480 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── くま・うさぎ 4個セット ── -->
+          <div class="product-card fade-in" data-category="animal">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/8b7760011ed27a3f1c31b550831278143e4acdd9.jpeg"
+                   alt="かぎ針編みくま・うさぎモチーフ 4個セット リボン付き" loading="lazy">
+              <span class="product-card__badge product-card__badge--popular">人気</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Animal Motifs</p>
+              <h3 class="product-card__name">くま・うさぎモチーフ 4個セット</h3>
+              <p class="product-card__price">¥666 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── くま・うさぎ ナチュラル ── -->
+          <div class="product-card fade-in" data-category="animal">
+            <div class="product-card__img-wrap">
+              <img src="https://image.minne.com/minne/mobile_app_product/480x480cq85/6850656c6dcd702f2850e54897a5be87d08dbdc2.jpeg"
+                   alt="かぎ針編みくま・うさぎモチーフ ナチュラル 韓国風" loading="lazy">
+              <span class="product-card__badge product-card__badge--new">New</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Animal Motifs</p>
+              <h3 class="product-card__name">くま・うさぎモチーフ（ナチュラル）</h3>
+              <p class="product-card__price">¥550 <span>税込</span></p>
+              <div class="product-card__actions">
+                <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--buy">メルカリ</a>
+                <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--buy btn--buy-minne">minne</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CUSTOM ORDER CTA ========== -->
+    <section style="background:var(--bg-alt);padding:64px 0;text-align:center;">
+      <div class="container container--narrow">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--primary);display:block;margin-bottom:14px;">Custom Order</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:1.5rem;font-weight:400;margin-bottom:16px;color:var(--text);">オーダーメイドも承ります</h2>
+        <p style="font-size:0.88rem;color:var(--text-mid);line-height:2.2;margin-bottom:32px;">
+          お色・サイズのご希望はお気軽にご相談ください。<br>
+          お誕生日プレゼントや贈り物用のオーダーも大歓迎です。<br>
+          メルカリ・minneのメッセージ機能よりお問い合わせください。
+        </p>
+        <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+          <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--mercari">メルカリへ相談</a>
+          <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--minne">minneへ相談</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-brand__logo en">kokoro-ami</p>
+          <p class="footer-brand__tagline">日々の暮らしに、<br>小さな愛とときめきを。</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/life_m.to.s?igsh=MTYyY2ttYXVoemdxYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="footer-social__link" aria-label="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener">メルカリ</a></li>
+            <li><a href="https://minne.com/@08024486901" target="_blank" rel="noopener">minne</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 こころあみ All rights reserved.</span>
+        <span>Handmade with ♥ in Japan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('cat');
+    if (cat) {
+      const btn = document.querySelector(`.filter-btn[data-filter="${cat}"]`);
+      if (btn) btn.click();
+    }
+  </script>
+</body>
+</html>

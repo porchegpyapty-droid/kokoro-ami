@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News &amp; Blog | こころあみ Crochet Studio</title>
+  <meta name="description" content="こころあみの新作情報・制作の裏側・お知らせをお届けします。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    .article-body { font-size: 0.9rem; color: var(--text-mid); line-height: 2.4; }
+    .article-body p { margin-bottom: 16px; }
+
+    .tag-filter { display: flex; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; }
+    .tag-pill {
+      font-size: 0.75rem; padding: 6px 16px;
+      border-radius: var(--radius-pill); border: 1px solid var(--border);
+      color: var(--text-mid); cursor: pointer; transition: all var(--transition);
+    }
+    .tag-pill:hover, .tag-pill.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+    .news-list { display: flex; flex-direction: column; gap: 0; }
+    .news-list-item {
+      display: grid; grid-template-columns: 200px 1fr; gap: 32px;
+      padding: 36px 0; border-bottom: 1px solid var(--border);
+      align-items: start; text-decoration: none; color: inherit;
+    }
+    .news-list-item:first-child { border-top: 1px solid var(--border); }
+    .news-list-item:hover .news-list-item__title { color: var(--accent); }
+    .news-list-item__img { border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; }
+    .news-list-item__img .ph { width: 100%; height: 100%; transition: transform 0.5s ease; }
+    .news-list-item:hover .news-list-item__img .ph { transform: scale(1.05); }
+    .news-list-item__meta { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .news-list-item__date { font-family: var(--font-en); font-size: 0.7rem; color: var(--text-light); letter-spacing: 0.08em; }
+    .news-list-item__title { font-family: var(--font-jp-serif); font-size: 1.05rem; line-height: 1.6; margin-bottom: 10px; color: var(--text); transition: color var(--transition); }
+    .news-list-item__excerpt { font-size: 0.82rem; color: var(--text-mid); line-height: 1.9; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .news-list-item__more { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; color: var(--accent); margin-top: 12px; }
+
+    @media (max-width: 600px) {
+      .news-list-item { grid-template-columns: 1fr; gap: 16px; }
+      .news-list-item__img { aspect-ratio: 16/9; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <span class="en">kokoro-ami</span>
+          <span class="site-logo__sub">crochet studio</span>
+        </a>
+        <nav class="site-nav">
+          <a href="index.html"    class="site-nav__link">Home</a>
+          <a href="products.html" class="site-nav__link">Products</a>
+          <a href="about.html"    class="site-nav__link">About</a>
+          <a href="news.html"     class="site-nav__link">News</a>
+          <a href="products.html" class="site-nav__cta">購入はこちら</a>
+        </nav>
+        <button class="hamburger" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html"    class="mobile-nav__link">Home</a>
+      <a href="products.html" class="mobile-nav__link">Products</a>
+      <a href="about.html"    class="mobile-nav__link">About</a>
+      <a href="news.html"     class="mobile-nav__link">News</a>
+      <a href="products.html" class="mobile-nav__cta">商品をみる →</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <div class="page-hero">
+      <p class="page-hero__label">News &amp; Blog</p>
+      <h1 class="page-hero__title">お知らせ・制作日記</h1>
+      <p class="page-hero__desc">新作情報や制作の裏側をお届けします。</p>
+    </div>
+
+    <!-- ========== FEATURED ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-header__label">Featured</span>
+          <h2 class="section-header__title">注目の記事</h2>
+        </div>
+
+        <div class="news-featured">
+
+          <a href="#article-1" class="news-featured-card fade-in">
+            <div class="news-featured-card__img">
+              <div class="ph" style="background:linear-gradient(135deg,#fde8e8 0%,#f0b0b8 60%,#e890a0 100%);width:100%;height:100%;"></div>
+            </div>
+            <div class="news-featured-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__date">2025.04.20</span>
+                <span class="news-card__tag news-card__tag--notice">新作情報</span>
+              </div>
+              <h2 class="news-featured-card__title">春の新色モチーフが完成しました🌸</h2>
+              <p class="article-body">
+                桜ピンクとミルクホワイトの春らしいカラーのハートモチーフが仲間入り。
+                やわらかい色合いが春のコーデやインテリアにぴったりです。
+                minneとメルカリにて販売中です。
+              </p>
+              <span class="btn btn--ghost" style="margin-top:auto;">続きを読む →</span>
+            </div>
+          </a>
+
+          <a href="#article-2" class="news-featured-card fade-in">
+            <div class="news-featured-card__img">
+              <div class="ph" style="background:linear-gradient(135deg,#f5e8d8 0%,#d4a870 60%,#c89060 100%);width:100%;height:100%;"></div>
+            </div>
+            <div class="news-featured-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__date">2025.04.10</span>
+                <span class="news-card__tag news-card__tag--story">制作の裏側</span>
+              </div>
+              <h2 class="news-featured-card__title">くまモチーフ、できるまで</h2>
+              <p class="article-body">
+                ふっくら丸い耳のバランスが難しくて、何度も試作を重ねました。
+                「かわいい！」と思える形になるまでの記録をお届けします。
+              </p>
+              <span class="btn btn--ghost" style="margin-top:auto;">続きを読む →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALL NEWS ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-header__label">All Posts</span>
+          <h2 class="section-header__title">すべての記事</h2>
+        </div>
+
+        <div class="tag-filter fade-in">
+          <button class="tag-pill active">すべて</button>
+          <button class="tag-pill">新作情報</button>
+          <button class="tag-pill">制作の裏側</button>
+          <button class="tag-pill">お知らせ</button>
+        </div>
+
+        <div class="news-list">
+
+          <a href="#article-1" class="news-list-item fade-in">
+            <div class="news-list-item__img">
+              <div class="ph" style="background:linear-gradient(135deg,#fde8e8 0%,#f0b0b8 100%);"></div>
+            </div>
+            <div>
+              <div class="news-list-item__meta">
+                <span class="news-list-item__date">2025.04.20</span>
+                <span class="news-card__tag news-card__tag--notice">新作情報</span>
+              </div>
+              <h3 class="news-list-item__title">春の新色モチーフが完成しました🌸</h3>
+              <p class="news-list-item__excerpt">桜ピンクとミルクホワイトのハートモチーフが仲間入り。minneとメルカリにて順次出品予定です。</p>
+              <span class="news-list-item__more">続きを読む →</span>
+            </div>
+          </a>
+
+          <a href="#article-2" class="news-list-item fade-in">
+            <div class="news-list-item__img">
+              <div class="ph" style="background:linear-gradient(135deg,#f5e8d8 0%,#d4a870 100%);"></div>
+            </div>
+            <div>
+              <div class="news-list-item__meta">
+                <span class="news-list-item__date">2025.04.10</span>
+                <span class="news-card__tag news-card__tag--story">制作の裏側</span>
+              </div>
+              <h3 class="news-list-item__title">くまモチーフ、できるまで</h3>
+              <p class="news-list-item__excerpt">ふっくらした耳のバランスを出すのに何度も試作。「これだ！」と思えた瞬間の話を書きました。</p>
+              <span class="news-list-item__more">続きを読む →</span>
+            </div>
+          </a>
+
+          <a href="#article-3" class="news-list-item fade-in">
+            <div class="news-list-item__img">
+              <div class="ph" style="background:linear-gradient(135deg,#d8ecd0 0%,#a0c898 100%);"></div>
+            </div>
+            <div>
+              <div class="news-list-item__meta">
+                <span class="news-list-item__date">2025.03.28</span>
+                <span class="news-card__tag news-card__tag--notice">お知らせ</span>
+              </div>
+              <h3 class="news-list-item__title">minneのお気に入り登録ありがとうございます✨</h3>
+              <p class="news-list-item__excerpt">たくさんの方に応援していただき、本当にありがとうございます。今後も新作を続々出品予定です。</p>
+              <span class="news-list-item__more">続きを読む →</span>
+            </div>
+          </a>
+
+          <a href="#article-4" class="news-list-item fade-in">
+            <div class="news-list-item__img">
+              <div class="ph" style="background:linear-gradient(135deg,#fce8e0 0%,#f0a888 100%);"></div>
+            </div>
+            <div>
+              <div class="news-list-item__meta">
+                <span class="news-list-item__date">2025.03.15</span>
+                <span class="news-card__tag news-card__tag--story">制作の裏側</span>
+              </div>
+              <h3 class="news-list-item__title">いちごモチーフ、5個セットにした理由</h3>
+              <p class="news-list-item__excerpt">単品よりセットで使ったほうがかわいい！という娘の一言がきっかけでした。制作エピソードをご紹介します。</p>
+              <span class="news-list-item__more">続きを読む →</span>
+            </div>
+          </a>
+
+          <a href="#article-5" class="news-list-item fade-in">
+            <div class="news-list-item__img">
+              <div class="ph" style="background:linear-gradient(135deg,#f0d8e8 0%,#c898b8 100%);"></div>
+            </div>
+            <div>
+              <div class="news-list-item__meta">
+                <span class="news-list-item__date">2025.02.20</span>
+                <span class="news-card__tag news-card__tag--notice">新作情報</span>
+              </div>
+              <h3 class="news-list-item__title">ハートモチーフポーチ、完成しました💕</h3>
+              <p class="news-list-item__excerpt">リクエストをいただいていたポーチがついに完成。モチーフをポイントにした、使いやすいサイズ感です。</p>
+              <span class="news-list-item__more">続きを読む →</span>
+            </div>
+          </a>
+
+          <a href="#article-6" class="news-list-item fade-in">
+            <div class="news-list-item__img">
+              <div class="ph" style="background:linear-gradient(135deg,#e8e8f0 0%,#a0a8d0 100%);"></div>
+            </div>
+            <div>
+              <div class="news-list-item__meta">
+                <span class="news-list-item__date">2025.02.01</span>
+                <span class="news-card__tag news-card__tag--story">制作の裏側</span>
+              </div>
+              <h3 class="news-list-item__title">「こころあみ」という名前に込めた想い</h3>
+              <p class="news-list-item__excerpt">「心」と「編み」を合わせたこの名前。ブランドを始めるときに一番最初に決めたことをお話しします。</p>
+              <span class="news-list-item__more">続きを読む →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SNS CTA ========== -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="fade-in" style="text-align:center;padding:48px;background:var(--bg-alt);border-radius:var(--radius-lg);">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--primary);display:block;margin-bottom:14px;">Follow Us</span>
+          <h2 style="font-family:'Noto Serif JP',serif;font-size:1.4rem;font-weight:400;margin-bottom:16px;color:var(--text);">日々の制作はSNSで発信中</h2>
+          <p style="font-size:0.85rem;color:var(--text-mid);line-height:2.2;margin-bottom:32px;">
+            新作の完成速報・制作風景・娘との日常を<br>
+            InstagramやSNSでお届けしています。
+          </p>
+          <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+            <a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener" class="btn btn--mercari">メルカリをみる</a>
+            <a href="https://minne.com/@08024486901" target="_blank" rel="noopener" class="btn btn--minne">minneをみる</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-brand__logo en">kokoro-ami</p>
+          <p class="footer-brand__tagline">日々の暮らしに、<br>小さな愛とときめきを。</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/life_m.to.s?igsh=MTYyY2ttYXVoemdxYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="footer-social__link" aria-label="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="https://jp.mercari.com/user/profile/524631286" target="_blank" rel="noopener">メルカリ</a></li>
+            <li><a href="https://minne.com/@08024486901" target="_blank" rel="noopener">minne</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 こころあみ All rights reserved.</span>
+        <span>Handmade with ♥ in Japan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const tagPills = document.querySelectorAll('.tag-pill');
+    tagPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        tagPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
